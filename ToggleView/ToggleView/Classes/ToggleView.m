@@ -295,6 +295,7 @@ NSString *const RIGHT_BUTTON_IMAGE_SEL   = @"right_button_off.png";
 
 - (void)setSelectedButton:(ToggleButtonSelected)selectedButton
 {
+    _selectedButton = selectedButton;
     switch (selectedButton) {
         case ToggleButtonSelectedLeft:
             [self onLeftButton:nil];
